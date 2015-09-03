@@ -77,6 +77,11 @@ Error object returned to callbacks when user cancels a prompt.
 
 Generic error object returned to callbacks.
 
+## Todo
+
+- Handle pinentries that prompt over stdio,
+  i.e. pinentry-tty and pinentry-curses
+
 ## License
 
 Fair License (Fair)
