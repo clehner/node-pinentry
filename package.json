@@ -1,0 +1,19 @@
+{
+  "name": "pinentry",
+  "version": "0.0.1",
+  "description": "Run GnuPG pinentry dialogs",
+  "main": "index.js",
+  "author": "Charles Lehner <cel@celehner.com> (http://celehner.com/)",
+  "license": "Fair",
+  "keywords": ["pinentry", "gnupg", "assuan", "dialog"],
+  "dependencies": {
+    "linerstream": "^0.1.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/clehner/node-pinentry.git"
+  },
+  "bugs": {
+    "url": "https://github.com/clehner/node-pinentry/issues"
+  }
+}
