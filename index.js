@@ -12,19 +12,19 @@ inherits(Pinentry, EventEmitter);
 Pinentry.prototype._opt = {};
 
 Pinentry.prototype._propCmds = {
-	  desc: "SETDESC",
-      prompt: "SETPROMPT",
-      keyinfo: "SETKEYINFO",
-      repeat: "SETREPEAT",
-      repeaterror: "SETREPEATERROR",
-      error: "SETERROR",
-      ok: "SETOK",
-      notok: "SETNOTOK",
-      cancel: "SETCANCEL",
-      qualitybar: "SETQUALITYBAR",
-      qualitybar_tt: "SETQUALITYBAR_TT",
-      title: "SETTITLE",
-      timeout: "SETTIMEOUT"
+	desc: "SETDESC",
+	prompt: "SETPROMPT",
+	keyinfo: "SETKEYINFO",
+	repeat: "SETREPEAT",
+	repeaterror: "SETREPEATERROR",
+	error: "SETERROR",
+	ok: "SETOK",
+	notok: "SETNOTOK",
+	cancel: "SETCANCEL",
+	qualitybar: "SETQUALITYBAR",
+	qualitybar_tt: "SETQUALITYBAR_TT",
+	title: "SETTITLE",
+	timeout: "SETTIMEOUT"
 };
 
 Pinentry.prototype.connect = function (cmd, cb) {
@@ -35,7 +35,7 @@ Pinentry.prototype.connect = function (cmd, cb) {
 	if (cb) {
 		this._onConnect = cb;
 	}
-    this._proc = spawn(cmd || "pinentry");
+	this._proc = spawn(cmd || "pinentry");
 	this._proc.stdout.pipe(new Linerstream()).on("data",
 		Pinentry_onLine.bind(this));
 	return this;
